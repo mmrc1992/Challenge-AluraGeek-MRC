@@ -26,8 +26,8 @@ body {
     font-family: var(--fuente-general);
     box-sizing: border-box;
     background-color: var(--color-fondo);
-    background-image: url('Imagenes/fondo.jpg');
-    background: linear-gradient(rgba(3, 3, 3, 0.5), rgba(2, 2, 3, 0.9)), url('/Imagenes/fondo.jpg');
+    background-image: url('../Imagenes/fondo.jpg');
+    background: linear-gradient(rgba(3, 3, 3, 0.5), rgba(2, 2, 3, 0.9)), url('../Imagenes/fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -39,9 +39,6 @@ body {
   }
 
 header {
-    width: 100%;
-    padding: 1rem; 
-    box-sizing: border-box;
     background-color: var(--color-primario);
     color: var(--color-titulo);
     padding: 1rem;
@@ -178,7 +175,9 @@ footer {
   }
 
   /* Estilos generales para pantallas pequeñas */
-@media (max-width: 768px) {    
+@media (max-width: 768px) {
+    /* Ajustes en el header */
+    
     /* Títulos */
     h1, h2 {
         font-size: 1.5rem;

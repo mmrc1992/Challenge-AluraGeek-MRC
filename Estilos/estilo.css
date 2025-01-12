@@ -6,7 +6,7 @@
     --color-titulo: #faf8f8;
     --color-texto: #0e0d0d;
     --color-borde: #ccc;
-    --color-boton-eliminar-hover: #740674;
+    --color-boton-hover: #740674;
     --sombra-card: 0 2px 5px rgba(0, 0, 0, 0.1);
     --sombra-card-hover: 0 4px 8px rgba(0, 0, 0, 0.2);
     --fuente-general: Roboto;
@@ -16,7 +16,8 @@
 
 
 /* Estilo general */
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -31,11 +32,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    color: white;    
+    color: white;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
-  }
+    min-height: 100vh;
+}
 
 header {
     background-color: var(--color-primario);
@@ -46,8 +47,8 @@ header {
 
 main {
     padding: 1rem;
-    flex: 1; 
-  }
+    flex: 1;
+}
 
 h1,
 h2 {
@@ -94,7 +95,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--color-boton-eliminar-hover);
+    background-color: var(--color-boton-hover);
 }
 
 /* Estilo para la cuadrícula de productos */
@@ -156,7 +157,7 @@ button:hover {
 }
 
 .card button:hover {
-    background-color: var(--color-boton-eliminar-hover);
+    background-color: var(--color-boton-hover);
 }
 
 footer {
@@ -166,19 +167,21 @@ footer {
     padding: 1rem;
     width: 100%;
     margin: 0;
-  }
+}
 
-  .texto-footer {
+.texto-footer {
     font-size: 0.8rem;
     font-style: italic;
-  }
+}
 
-  /* Estilos generales para pantallas pequeñas */
+/* Responsividad*/
+/* Estilos generales para pantallas pequeñas */
 @media (max-width: 768px) {
     /* Ajustes en el header */
-    
+
     /* Títulos */
-    h1, h2 {
+    h1,
+    h2 {
         font-size: 1.5rem;
     }
 
@@ -210,7 +213,7 @@ footer {
     /* Tarjetas */
     .card {
         max-width: 100%;
-        padding: 1rem;
+        padding: 0.8rem;
     }
 
     .card img {
@@ -227,15 +230,18 @@ footer {
     }
 }
 
-/* Responsividad*/
+
 /* Estilos para pantallas muy pequeñas (celulares) */
 @media (max-width: 480px) {
+
     /* Títulos más pequeños */
-    h1, h2 {
+    h1,
+    h2 {
         font-size: 1.2rem;
     }
 
     /* Ajustes en los botones */
+
     .boton-formulario {
         flex-direction: column;
         gap: 1rem;
@@ -269,4 +275,3 @@ footer {
         font-size: 0.9rem;
     }
 }
-

@@ -25,9 +25,8 @@ html, body {
 body {
     font-family: var(--fuente-general);
     box-sizing: border-box;
-    background-color: var(--color-fondo);
-    background-image: url('../Imagenes/fondo.jpg');
-    background: linear-gradient(rgba(3, 3, 3, 0.5), rgba(2, 2, 3, 0.9)), url('../Imagenes/fondo.jpg');
+    background-image: direccion URL('../Imagenes/fondo.jpg');
+    background: linear-gradient(rgba(3, 3, 3, 0.5), rgba(2, 2, 3, 0.9)), direccion URL('../Imagenes/fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -270,3 +269,4 @@ footer {
         font-size: 0.9rem;
     }
 }
+

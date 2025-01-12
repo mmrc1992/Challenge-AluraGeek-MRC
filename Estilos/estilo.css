@@ -2,6 +2,7 @@
 :root {
     --color-primario: #0d524a;
     --color-secundario: #4e095f;
+    --color-footer:#272527;
     --color-fondo: #9f9fa1;
     --color-titulo: #faf8f8;
     --color-texto: #0e0d0d;
@@ -163,16 +164,16 @@ button:hover {
 }
 
 footer {
-    background-color: var(--color-primario);
+    background-color: var(--color-footer);
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 0.2rem;
     width: 100%;
     margin: 0;
 }
 
 .texto-footer {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-style: italic;
 }
 
@@ -224,7 +225,7 @@ footer {
 
     /* Ajustes en el footer */
     footer {
-        padding: 0.8rem;
+        padding: 0.2rem;
     }
 
     .texto-footer {
@@ -275,5 +276,14 @@ footer {
 
     .card .price {
         font-size: 0.9rem;
+    }
+
+    /* Ajustes en el footer */
+    footer {
+        padding: 0.2rem;
+    }
+
+    .texto-footer {
+        font-size: 0.7rem;
     }
 }

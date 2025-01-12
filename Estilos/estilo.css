@@ -1,0 +1,150 @@
+/* Variables de diseño */
+:root {
+  --color-primario: #4CAF50;
+  --color-secundario: #FF6F61;
+  --color-fondo: #f4f4f9;
+  --color-texto: #333;
+  --color-borde: #ccc;
+  --color-boton-hover: #E65C54;
+  --sombra-card: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --sombra-card-hover: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --fuente-general: Arial, sans-serif;
+  --radio-borde: 5px;
+  --transicion-general: 0.2s ease;
+}
+/* Estilo general */
+body {
+    font-family: var(--fuente-general);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+  }
+  
+  header {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  h1, h2 {
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+  
+  .seccion-formulario, .seccion-productos {
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  input {
+    padding: 0.5rem;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-borde);
+  }
+  
+  .boton-formulario {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: var(--radio-borde);
+    cursor: pointer;
+    transition: var(--transicion-general);
+  }
+  
+  button[type="button"] {
+    background-color: var(--color-primario);
+    color: white;
+  }
+  
+  button[type="reset"] {
+    background-color: var(--color-borde);
+    color: var(--color-texto);
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Estilo para la cuadrícula de productos */
+  .grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  /* Tarjetas */
+  .card {
+    background-color: white;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-borde);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: var(--sombra-card);
+    transition: transform var(--transicion-general), box-shadow var(--transicion-general);
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: var(--sombra-card-hover);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: var(--radio-borde);
+  }
+  
+  .card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .card .price {
+    color: var(--color-primario);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+  
+  .card button {
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: var(--radio-borde);
+    cursor: pointer;
+    transition: var(--transicion-general);
+  }
+  
+  .card button:hover {
+    background-color: var(--color-boton-hover);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--color-primario);
+    color: white;
+  }
+  

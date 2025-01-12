@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tienda de productos geeks - Administra y publica tus productos fácilmente">
+  <title>E-Commerce Geek</title>
+  <link rel="stylesheet" href="Estilos/estilo.css">
+</head>
+<body>
+  <header>
+    <h1>E-Commerce Geek</h1>
+  </header>
+  <main>
+    <section class="seccion-formulario">
+      <h2>Publicar Producto</h2>
+      <form id="formularioProducto">
+        <label for="nombreProducto">Nombre del Producto</label>
+        <input type="text" id="nombreProducto" name="nombreProducto" placeholder="Ingresa el nombre del producto" required>
+        
+        <label for="imagenProducto">Imagen del Producto (URL)</label>
+        <input type="url" id="imagenProducto" name="imagenProducto" placeholder="Ingresa el enlace de la imagen" required>
+        
+        <label for="precioProducto">Precio (USD)</label>
+        <input type="number" id="precioProducto" name="precioProducto" placeholder="Ingresa el precio" min="1" required>
+        
+        <div class="boton-formulario">
+          <button type="button" id="publicarProducto">Publicar</button>
+          <button type="reset">Limpiar</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="seccion-productos">
+      <h2>Productos Publicados</h2>
+      <div class="grid-productos" id="productosPublicados">
+        <!-- Aquí se mostrarán las cards de productos -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Desarrollado por Micaela Roig Courtis</p>
+  </footer>
+  <script src="Interactividad/interactividad.js"></script>
+</body>
+</html>

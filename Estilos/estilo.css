@@ -43,6 +43,8 @@ header {
     color: var(--color-titulo);
     padding: 1rem;
     text-align: center;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 main {

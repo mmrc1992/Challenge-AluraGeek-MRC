@@ -25,7 +25,8 @@ html, body {
 body {
     font-family: var(--fuente-general);
     box-sizing: border-box;
-    background-image: url('../fondo.jpg');
+    background-color: var(--color-fondo);
+    background-image: url('Imagenes/fondo.jpg');
     background: linear-gradient(rgba(3, 3, 3, 0.5), rgba(2, 2, 3, 0.9)), url('/Imagenes/fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -121,7 +122,6 @@ button:hover {
     transition: transform var(--transicion-general), box-shadow var(--transicion-general);
     width: 100%;
     max-width: 300px;
-    box-sizing: border-box;
 }
 
 .card:hover {
@@ -178,13 +178,7 @@ footer {
   }
 
   /* Estilos generales para pantallas pequeñas */
-@media (max-width: 768px) { 
-    /* Header */
-    padding: 0.8rem; /* Reducir el padding */
-    text-align: center; /* Asegurarse de que el contenido esté centrado */
-    font-size: 1.2rem; /* Ajustar el tamaño de la fuente */
-    }
-
+@media (max-width: 768px) {    
     /* Títulos */
     h1, h2 {
         font-size: 1.5rem;
@@ -238,12 +232,6 @@ footer {
 /* Responsividad*/
 /* Estilos para pantallas muy pequeñas (celulares) */
 @media (max-width: 480px) {
-    /* Header */
-    padding: 0;
-    text-align: center; 
-    font-size: 1.2rem;
-    }
-    
     /* Títulos más pequeños */
     h1, h2 {
         font-size: 1.2rem;
@@ -283,3 +271,4 @@ footer {
         font-size: 0.9rem;
     }
 }
+

@@ -25,7 +25,7 @@ html, body {
 body {
     font-family: var(--fuente-general);
     box-sizing: border-box;
-    background-image: url('Imagenes/fondo.jpg');
+    background-image: url('/fondo.jpg');
     background: linear-gradient(rgba(3, 3, 3, 0.5), rgba(2, 2, 3, 0.9)), url('/Imagenes/fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -238,7 +238,7 @@ footer {
 /* Estilos para pantallas muy pequeñas (celulares) */
 @media (max-width: 480px) {
     /* Header */
-    padding: 0.2rem;
+    padding: 0;
     text-align: center; 
     font-size: 1.2rem;
     }

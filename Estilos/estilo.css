@@ -238,7 +238,7 @@ footer {
 /* Estilos para pantallas muy pequeñas (celulares) */
 @media (max-width: 480px) {
     /* Header */
-    padding: 0.5rem;
+    padding: 0.2rem;
     text-align: center; 
     font-size: 1.2rem;
     }

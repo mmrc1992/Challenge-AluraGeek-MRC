@@ -121,6 +121,7 @@ button:hover {
     transition: transform var(--transicion-general), box-shadow var(--transicion-general);
     width: 100%;
     max-width: 300px;
+    box-sizing: border-box;
 }
 
 .card:hover {
